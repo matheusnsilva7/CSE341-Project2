@@ -88,7 +88,7 @@ const updateTask = async (req, res) => {
 
     const { title, subject, priority, dueDate } = req.body;
 
-    if (!title || !subject || !priority || dueDate) {
+    if (!title || !subject || !priority || !dueDate) {
       return res.status(400).json({
         message: "title, subject, and priority are required",
       });
