@@ -135,7 +135,7 @@ const deleteTask = async (req, res) => {
     const response = await mongodb
       .getDatabase()
       .db()
-      .collection("tasks")
+      .collection("Task")
       .deleteOne({ _id: taskId });
 
     if (response.deletedCount > 0) {
