@@ -5,7 +5,7 @@ const doc = {
     title: "Task Api",
     description: "Task Api",
   },
-  host: "localhost:3001",
+  host: "localhost:3000",
   schemes: ["https", "http"],
 };
 const outputFile = "./swagger.json";
